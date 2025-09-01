@@ -1,0 +1,195 @@
+Plecs {
+  Name          "foc"
+  Version       "4.9"
+  CircuitModel  "ContStateSpace"
+  StartTime     "0.0"
+  TimeSpan      "1.0"
+  Timeout       ""
+  Solver        "auto"
+  MaxStep       "1e-3"
+  InitStep      "-1"
+  FixedStep     "1e-3"
+  Refine        "1"
+  ZCStepSize    "1e-9"
+  RelTol        "1e-3"
+  AbsTol        "-1"
+  TurnOnThreshold "0"
+  NonIdealSwitchResistance "1"
+  SyncFixedStepTasks "2"
+  UseSingleCommonBaseRate "2"
+  LossVariableLimitExceededMsg "3"
+  NegativeSwitchLossMsg "3"
+  DivisionByZeroMsg "3"
+  DatatypeOverflowMsg "3"
+  DatatypeInheritanceConflictMsg "2"
+  ContSampleTimeConflictMsg "2"
+  StiffnessDetectionMsg "2"
+  MaxConsecutiveZCs "1000"
+  AlgebraicLoopWithStateMachineMsg "3"
+  AssertionAction "1"
+  FixedPointDatatypeOverride "1"
+  InitializationCommands ""
+  InitialState  "1"
+  SystemState   ""
+  TaskingMode   "1"
+  TaskConfigurations ""
+  CodeGenParameterInlining "2"
+  CodeGenFloatingPointFormat "2"
+  CodeGenAbsTimeUsageMsg "3"
+  CodeGenBaseName ""
+  CodeGenOutputDir ""
+  CodeGenExtraOpts ""
+  CodeGenTarget "Generic"
+  CodeGenTargetSettings ""
+  ExtendedMatrixPrecision "1"
+  MatrixSignificanceCheck "2"
+  RemoveUnusedStateSpaceOutputs "2"
+  EnableStateSpaceSplitting "2"
+  DisplayStateSpaceSplitting "1"
+  DiscretizationMethod "2"
+  ExternalModeSettings ""
+  AlgebraicLoopMethod "1"
+  AlgebraicLoopTolerance "1e-6"
+  ScriptsDialogGeometry ""
+  ScriptsDialogSplitterPos "0"
+  Schematic {
+    Location      [-1945, 140; -1042, 701]
+    ZoomFactor    1.49863
+    SliderPosition [0, 0]
+    ShowBrowser   off
+    BrowserWidth  100
+    Component {
+      Type          CScript
+      Name          "C-Script"
+      Show          on
+      Position      [215, 120]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "DialogGeometry"
+        Value         "[-1842 520 1166 757]"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumInputs"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumOutputs"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumContStates"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumDiscStates"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "NumZCSignals"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "DirectFeedthrough"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "TerminalBasedSampleTimes"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Parameters"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "LangStandard"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "GnuExtensions"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "RuntimeCheck"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "HighlightLevel"
+        Value         "0"
+        Show          off
+      }
+      Parameter {
+        Variable      "Declarations"
+        Value         base64 "Ly8g5paH5Lu25ZCN77yaUG9zaXRpb25QSS5jc2MKCiNkZWZp"
+"bmUgVHMgNTBlLTYgIC8vIOmHh+agt+WRqOacn++8mjIwa0h6CgovLyDovpPlhaXnq6/lj6MKI2RlZ"
+"mluZSBSRUYgICAgICBpblswXSAgLy8g5Y+C6ICD5YC8CiNkZWZpbmUgRkIgICAgICAgaW5bMV0gIC"
+"8vIOa1i+mHj+WAvOWPjemmiAojZGVmaW5lIEtQICAgICAgIGluWzJdICAvLyDmr5Tkvovns7vmlbA"
+"KI2RlZmluZSBLSSAgICAgICBpblszXSAgLy8g56ev5YiG57O75pWwCgovLyDovpPlh7rnq6/lj6MK"
+"I2RlZmluZSBPVVQgICAgICBvdXRbMF0KCi8vIOWGhemDqOWPmOmHj++8muS4iuS4gOasoeivr+W3r"
+"uOAgeS4iuS4gOasoei+k+WHugpkb3VibGUgcHJldl9lcnJvciA9IDA7CmRvdWJsZSBwcmV2X291dH"
+"B1dCA9IDA7Cgp2b2lkIGluaXQodm9pZCkKewogICAgcHJldl9lcnJvciA9IDA7CiAgICBwcmV2X29"
+"1dHB1dCA9IDA7Cn0KCnZvaWQgcnVuKHZvaWQpCnsKICAgIC8vIOW9k+WJjeivr+W3rgogICAgZG91"
+"YmxlIGVycm9yID0gUkVGIC0gRkI7CgogICAgLy8gUEnmjqfliLblmajvvIjkvY3nva7lvI/nprvml"
+"aPvvIkKICAgIGRvdWJsZSBkZWx0YV91ID0gS1AgKiAoZXJyb3IgLSBwcmV2X2Vycm9yKSArIEtJIC"
+"ogVHMgKiBlcnJvcjsKICAgIGRvdWJsZSBvdXRwdXQgPSBwcmV2X291dHB1dCArIGRlbHRhX3U7Cgo"
+"gICAgLy8g6L6T5Ye6CiAgICBPVVQgPSBvdXRwdXQ7CgogICAgLy8g5pu05paw54q25oCBCiAgICBw"
+"cmV2X2Vycm9yID0gZXJyb3I7CiAgICBwcmV2X291dHB1dCA9IG91dHB1dDsKfQo="
+        Show          off
+      }
+      Parameter {
+        Variable      "StartFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "OutputFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "UpdateFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "DerivativeFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "TerminateFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "StoreCustomStateFcn"
+        Value         ""
+        Show          off
+      }
+      Parameter {
+        Variable      "RestoreCustomStateFcn"
+        Value         ""
+        Show          off
+      }
+    }
+  }
+}
+DemoSignature "hYJWQ58m1uyc+KCMMfJWy12CzmbZv+BZYClZG+TMNU8="
